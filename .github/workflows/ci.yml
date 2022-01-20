@@ -1,20 +1,7 @@
 name: CI
 
 on:
-  pull_request:
-    paths-ignore:
-      - '.**'
-      - 'README.md'
-      - 'LICENSE'
-  push:
-    branches:
-      - master
-    tags:
-      - 'v*'
-    paths-ignore:
-      - '.**'
-      - 'README'
-      - 'LICENSE'
+  workflow_dispatch:
 
 jobs:
   build:
